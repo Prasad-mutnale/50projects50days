@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url('/image/back.jpg');
+    background-image: url('./image/back.jpg');
     font-family: 'Nunito',sans-serif;
     display: flex; 
     align-items: center;
