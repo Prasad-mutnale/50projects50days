@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body{
     background-image: url('/image/back.jpg');
     font-family: 'Nunito',sans-serif;
@@ -23,8 +22,6 @@ body{
     width: 74vw;
 }
 
-
-
 .panel{
     background-size: auto 100%;
     background-position: center;
@@ -38,6 +35,7 @@ body{
     position: relative;
     transition: flex 0.7s ease-in;
 }
+
 .panel h3{
     font-size:24px;
     position: absolute;
@@ -51,6 +49,7 @@ body{
 .panel.active{
     flex:5;
 }
+
 .panel.active h3{
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s; 
