@@ -3,11 +3,12 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
-
+const btn = document.getElementById('btn')
 
 form.addEventListener('submit', e=>{
     e.preventDefault();
     validateInput();
+    display();
 })
 
 const setError = (element,message)=>{
@@ -44,7 +45,7 @@ const validateInput = ()=>{
         setSuccess(email)
     }
 
-    if(passwordValue===" "){
+    if(passwordValue === ""){
         setError(password,"password is required");
     }else if(passwordValue.length < 8){
         setError(password ,"Password must be at least 8 character");
@@ -61,4 +62,15 @@ const validateInput = ()=>{
     } else{
         setSuccess(password);
     }
+
+
+  
 };
+
+const display=()=>{
+    document.write("<h2> "+username.value+ "</h2>");
+    document.write("<h2>"+email.value+"</h2>");
+    document.write("<h2>"+password.value+ "</h2>");
+}
+
+

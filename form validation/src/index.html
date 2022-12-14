@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="" id="form">
+        <form method="POST" id="form">
             <h2>Registration </h2>
             <div class="input">
                 <label for="username">Username</label>
@@ -20,7 +20,7 @@
 
             <div class="input">
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email" required>
+                <input type="email" name="email" id="email" required>
                 <div class="error"></div>
             </div>
 
@@ -36,8 +36,12 @@
                 <div class="error"></div>
             </div>
 
-            <button type="submit" >Sign Up</button>
+            <button type="submit" class="btn">Sign Up</button>
+
+
         </form>
+
+        <div class="ss"></div>
     </div>
 
     <script src="script.js"></script>
